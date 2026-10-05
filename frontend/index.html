@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cloud Lab 3</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Cloud Lab 3</h1>
+    <p>Full Stack User Management System</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Add New User</h2>
+
+      <form id="userForm">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        >
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <button type="submit">
+          Add User
+        </button>
+
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+
+    <section class="card">
+
+      <div class="users-header">
+        <h2>Users</h2>
+
+        <button id="loadUsers">
+          Load Users
+        </button>
+      </div>
+
+      <div id="users">
+        <p class="empty">
+          Click "Load Users" to see users.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Cloud Lab 3 &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

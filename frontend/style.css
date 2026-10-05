@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* Header */
+
+header {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Main */
+
+main {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* Buttons */
+
+button {
+  padding: 13px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Message */
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Users section */
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.users-header h2 {
+  margin-bottom: 0;
+}
+
+#users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* User */
+
+.user {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.user strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.user span {
+  color: #64748b;
+}
+
+.empty {
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  main {
+    width: 92%;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .users-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+}
